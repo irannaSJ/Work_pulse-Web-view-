@@ -1,0 +1,259 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "WAP-.####",
+ "creation": "2026-09-16 16:10:48.079738",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "general_settings_section",
+  "configuration_name",
+  "enabled",
+  "version",
+  "description",
+  "default_configuration",
+  "theme_settings_section",
+  "theme_mode",
+  "primary_color",
+  "secondary_text_color",
+  "accent_color",
+  "surface_color",
+  "dark_secondary_text_color",
+  "column_break_pnan",
+  "primary_text_color",
+  "secondary_color",
+  "background_color",
+  "dark_background_color",
+  "dark_surface_color",
+  "dark_primary_text_color",
+  "corner_radius",
+  "section_break_rrhm",
+  "feature",
+  "quick_actions_section",
+  "quick_actions",
+  "section_break_yvnu",
+  "navigation_items",
+  "home_section_section",
+  "home_sections",
+  "targeting_section",
+  "company",
+  "department",
+  "employee",
+  "role",
+  "configuration_scope"
+ ],
+ "fields": [
+  {
+   "fieldname": "general_settings_section",
+   "fieldtype": "Section Break",
+   "label": "General Settings"
+  },
+  {
+   "fieldname": "configuration_name",
+   "fieldtype": "Data",
+   "label": "configuration name"
+  },
+  {
+   "default": "0",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "enabled"
+  },
+  {
+   "fieldname": "version",
+   "fieldtype": "Int",
+   "label": "version"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "description"
+  },
+  {
+   "default": "0",
+   "fieldname": "default_configuration",
+   "fieldtype": "Check",
+   "label": "default configuration"
+  },
+  {
+   "fieldname": "theme_settings_section",
+   "fieldtype": "Section Break",
+   "label": "Theme Settings"
+  },
+  {
+   "default": "System",
+   "fieldname": "theme_mode",
+   "fieldtype": "Select",
+   "label": "theme mode",
+   "options": "System\nLight\nDark"
+  },
+  {
+   "fieldname": "primary_color",
+   "fieldtype": "Color",
+   "label": "primary color"
+  },
+  {
+   "fieldname": "secondary_color",
+   "fieldtype": "Color",
+   "label": "secondary color"
+  },
+  {
+   "fieldname": "accent_color",
+   "fieldtype": "Color",
+   "label": "accent color"
+  },
+  {
+   "fieldname": "background_color",
+   "fieldtype": "Color",
+   "label": "background color"
+  },
+  {
+   "fieldname": "surface_color",
+   "fieldtype": "Color",
+   "label": "surface color"
+  },
+  {
+   "fieldname": "primary_text_color",
+   "fieldtype": "Color",
+   "label": "primary text color"
+  },
+  {
+   "fieldname": "secondary_text_color",
+   "fieldtype": "Color",
+   "label": "secondary text color"
+  },
+  {
+   "fieldname": "dark_background_color",
+   "fieldtype": "Color",
+   "label": "dark background color"
+  },
+  {
+   "fieldname": "dark_surface_color",
+   "fieldtype": "Color",
+   "label": "dark surface color"
+  },
+  {
+   "fieldname": "dark_primary_text_color",
+   "fieldtype": "Color",
+   "label": "dark primary text color"
+  },
+  {
+   "fieldname": "dark_secondary_text_color",
+   "fieldtype": "Color",
+   "label": "dark secondary text color"
+  },
+  {
+   "fieldname": "corner_radius",
+   "fieldtype": "Float",
+   "label": "corner radius"
+  },
+  {
+   "fieldname": "section_break_yvnu",
+   "fieldtype": "Section Break",
+   "label": "Navigation Items"
+  },
+  {
+   "fieldname": "navigation_items",
+   "fieldtype": "Table",
+   "options": "workpulse navigation item"
+  },
+  {
+   "fieldname": "quick_actions_section",
+   "fieldtype": "Section Break",
+   "label": "Quick Actions"
+  },
+  {
+   "fieldname": "home_section_section",
+   "fieldtype": "Section Break",
+   "label": "Home Section"
+  },
+  {
+   "fieldname": "section_break_rrhm",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "workPulse feature"
+  },
+  {
+   "fieldname": "targeting_section",
+   "fieldtype": "Section Break",
+   "label": "Targeting"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "role",
+   "fieldtype": "Link",
+   "label": "Role",
+   "options": "Role"
+  },
+  {
+   "fieldname": "configuration_scope",
+   "fieldtype": "Select",
+   "label": "Configuration scope",
+   "options": "Global\nCompany\nDepartment\nRole\nEmployee"
+  },
+  {
+   "fieldname": "column_break_pnan",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "quick_actions",
+   "fieldtype": "Table",
+   "options": "workpulse quick action"
+  },
+  {
+   "fieldname": "home_sections",
+   "fieldtype": "Table",
+   "options": "workpulse home section"
+  },
+  {
+   "fieldname": "feature",
+   "fieldtype": "Table",
+   "options": "workpulse feature"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-23 12:25:40.023438",
+ "modified_by": "Administrator",
+ "module": "hrms_customization",
+ "name": "WorkPulse App Configuration",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

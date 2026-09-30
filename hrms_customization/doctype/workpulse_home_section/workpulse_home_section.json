@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "WHS-.#-.section_key",
+ "creation": "2026-09-16 17:02:13.047304",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_key",
+  "title",
+  "section_type",
+  "enabled",
+  "order",
+  "feature_key",
+  "permission_required"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_key",
+   "fieldtype": "Data",
+   "label": "section key"
+  },
+  {
+   "default": "Quick Actions",
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "title"
+  },
+  {
+   "fieldname": "section_type",
+   "fieldtype": "Select",
+   "label": "section type",
+   "options": "DATE_TIME\nATTENDANCE\nQUICK_ACTIONS\nLEAVE_SUMMARY"
+  },
+  {
+   "default": "0",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "enabled"
+  },
+  {
+   "fieldname": "order",
+   "fieldtype": "Int",
+   "label": "Order"
+  },
+  {
+   "fieldname": "feature_key",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "feature key"
+  },
+  {
+   "default": "0",
+   "fieldname": "permission_required",
+   "fieldtype": "Check",
+   "label": "permission required"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-09-28 14:54:01.252846",
+ "modified_by": "Administrator",
+ "module": "hrms_customization",
+ "name": "workpulse home section",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

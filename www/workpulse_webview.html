@@ -1,0 +1,226 @@
+{% extends "templates/web.html" %}
+
+{% block title %}
+WorkPulse
+{% endblock %}
+
+{% block page_content %}
+
+<link
+    rel="stylesheet"
+    href="/assets/hrms_customization/css/workpulse_webview.css"
+>
+
+<div class="workpulse-webview" id="workpulse-webview">
+
+    <!-- Header -->
+    <header class="wp-header">
+
+        <div class="wp-brand">
+            <div class="wp-brand-mark">
+                WP
+            </div>
+
+            <div>
+                <div class="wp-brand-name">
+                    WorkPulse
+                </div>
+
+                <div class="wp-brand-subtitle">
+                    WebView
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+    <!-- Main Content -->
+    <main class="wp-main">
+
+        <!-- Page Header -->
+        <section class="wp-page-header">
+
+            <span class="wp-eyebrow">
+                WORKPULSE
+            </span>
+
+            <h1 id="wp-page-title">
+                Employee Directory
+            </h1>
+
+            <p id="wp-page-description">
+                Dynamic ERPNext content will appear here.
+            </p>
+            <!-- Search -->
+            <div class="wp-search-bar">
+
+                <div class="wp-search-input-wrapper">
+
+                    <span class="wp-search-icon">
+                        🔍
+                    </span>
+
+                    <input
+                        type="search"
+                        id="wp-search-input"
+                        class="wp-search-input"
+                        placeholder="Search..."
+                        autocomplete="off"
+                    >
+
+                    <button
+                        type="button"
+                        id="wp-search-clear"
+                        class="wp-search-clear"
+                        aria-label="Clear search"
+                        hidden
+                    >
+                        ×
+                    </button>
+
+                </div>
+
+                <button
+                    type="button"
+                    id="wp-search-button"
+                    class="wp-search-button"
+                >
+                    Search
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Dynamic Content Container -->
+        <section
+            class="wp-content"
+            id="wp-content"
+        >
+
+            <!-- Loading State -->
+            <div
+                class="wp-state wp-loading"
+                id="wp-loading"
+                hidden
+            >
+                <div class="wp-spinner"></div>
+
+                <p>
+                    Loading...
+                </p>
+            </div>
+
+
+            <!-- Empty State -->
+            <div
+                class="wp-state wp-empty"
+                id="wp-empty"
+                hidden
+            >
+                <div class="wp-state-icon">
+                    —
+                </div>
+
+                <h2>
+                    Nothing to display
+                </h2>
+
+                <p>
+                    No content is available for this page.
+                </p>
+            </div>
+
+
+            <!-- Error State -->
+            <div
+                class="wp-state wp-error"
+                id="wp-error"
+                hidden
+            >
+                <div class="wp-state-icon">
+                    !
+                </div>
+
+                <h2>
+                    Something went wrong
+                </h2>
+
+                <p id="wp-error-message">
+                    Unable to load this page.
+                </p>
+
+                <button
+                    type="button"
+                    class="wp-button"
+                    id="wp-retry-button"
+                >
+                    Retry
+                </button>
+
+                <button
+                    type="button"
+                    class="wp-button"
+                    id="wp-error-back-button"
+                >
+                    Back to list
+                </button>
+            </div>
+
+
+            <!-- Initial Shell -->
+            <div
+                class="wp-shell-card"
+                id="wp-shell-card"
+            >
+
+                <div class="wp-shell-icon">
+                    WP
+                </div>
+
+                <div class="wp-shell-content">
+
+                    <h2>
+                        Reusable WorkView
+                    </h2>
+
+                    <p>
+                        This is the reusable WorkPulse WebView
+                        rendering shell.
+                    </p>
+
+                    <span class="wp-status">
+                        Ready
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="wp-footer">
+
+        <span>
+            WorkPulse
+        </span>
+
+        <span>
+            ERPNext Web Interface
+        </span>
+
+    </footer>
+
+</div>
+
+<script
+    src="/assets/hrms_customization/js/workpulse_webview.js">
+</script>
+
+{% endblock %}
