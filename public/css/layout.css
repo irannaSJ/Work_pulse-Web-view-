@@ -1,0 +1,523 @@
+.app-container {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 24px;
+}
+
+.foundation-card {
+    width: 100%;
+    max-width: 600px;
+
+    padding: 32px;
+
+    background: #ffffff;
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08);
+
+    text-align: center;
+}
+
+.foundation-card h1 {
+    margin-bottom: 12px;
+    font-size: 28px;
+}
+
+.foundation-card p {
+    color: #6b7280;
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   Phase 6 — Dashboard
+   Step 1
+   ========================================================= */
+
+.dashboard-screen {
+    width: 100%;
+    min-height: 100vh;
+    padding: 28px 24px 48px;
+}
+
+.dashboard-shell {
+    width: min(1480px,calc(100% - 48px));
+    margin: 0 auto;
+}
+
+/* ---------- Top Bar ---------- */
+
+.dashboard-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 8px 0 26px;
+}
+
+.dashboard-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.dashboard-brand-mark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 13px;
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #7c3aed
+    );
+    color: white;
+    font-size: 1rem;
+    font-weight: 800;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+}
+
+.dashboard-brand-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.dashboard-brand-name {
+    font-size: 1rem;
+    font-weight: 750;
+}
+
+.dashboard-brand-caption {
+    font-size: 0.75rem;
+    opacity: 0.55;
+}
+
+.dashboard-page-label {
+    padding: 8px 14px;
+    border: 1px solid rgba(127, 127, 127, 0.18);
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 650;
+    opacity: 0.7;
+}
+
+/* ---------- Hero ---------- */
+
+.dashboard-hero {
+    margin-top: 20px;
+    margin-bottom: 42px;
+    padding: 36px;
+    border: 1px solid rgba(127, 127, 127, 0.15);
+    border-radius: 28px;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(37, 99, 235, 0.11),
+            rgba(124, 58, 237, 0.07)
+        ),
+        rgba(255, 255, 255, 0.04);
+    box-shadow:
+        0 18px 50px rgba(0, 0, 0, 0.06);
+}
+
+.dashboard-eyebrow {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 0.78rem;
+    font-weight: 750;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+
+.dashboard-hero h1 {
+    margin: 0;
+    font-size: clamp(2rem, 4vw, 3.1rem);
+    line-height: 1.05;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+}
+
+.dashboard-hero p {
+    margin: 12px 0 0;
+    max-width: 620px;
+    font-size: 1rem;
+    line-height: 1.6;
+    opacity: 0.65;
+}
+
+/* ---------- Section ---------- */
+
+.dashboard-section {
+    width: 100%;
+}
+
+.dashboard-section-heading {
+    margin-bottom: 20px;
+}
+
+.dashboard-section-heading h2 {
+    margin: 0;
+    font-size: 1.45rem;
+    font-weight: 750;
+    letter-spacing: -0.02em;
+}
+
+.dashboard-section-heading p {
+    margin: 6px 0 0;
+    font-size: 0.92rem;
+    opacity: 0.6;
+}
+
+/* ---------- Cards ---------- */
+
+.dashboard-section-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.dashboard-section-card {
+    position: relative;
+    display: flex;
+    gap: 18px;
+    min-height: 210px;
+    padding: 24px;
+    overflow: hidden;
+    border: 1px solid rgba(127, 127, 127, 0.16);
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.045);
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.05);
+    transition:
+        transform 180ms ease,
+        box-shadow 180ms ease,
+        border-color 180ms ease;
+}
+
+.dashboard-section-card::after {
+    content: "";
+    position: absolute;
+    top: -90px;
+    right: -90px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: rgba(99, 102, 241, 0.08);
+    pointer-events: none;
+}
+
+.dashboard-section-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(99, 102, 241, 0.24);
+    box-shadow:
+        0 18px 45px rgba(0, 0, 0, 0.09);
+}
+
+.dashboard-card-icon {
+    flex: 0 0 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(37, 99, 235, 0.12),
+            rgba(124, 58, 237, 0.12)
+        );
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.dashboard-card-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.dashboard-card-header {
+    min-height: 20px;
+}
+
+.dashboard-card-type {
+    font-size: 0.7rem;
+    font-weight: 750;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.55;
+}
+
+.dashboard-section-card h3 {
+    margin: 10px 0 0;
+    font-size: 1.35rem;
+    font-weight: 750;
+}
+
+.dashboard-section-card p {
+    margin: 7px 0 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    opacity: 0.6;
+}
+
+.dashboard-card-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: auto;
+    padding-top: 24px;
+    font-size: 0.82rem;
+    font-weight: 650;
+    opacity: 0.7;
+}
+
+.dashboard-card-arrow {
+    font-size: 1.1rem;
+    transition: transform 180ms ease;
+}
+
+.dashboard-section-card:hover .dashboard-card-arrow {
+    transform: translateX(4px);
+}
+
+/* ---------- Empty ---------- */
+
+.dashboard-empty-card {
+    grid-column: 1 / -1;
+    padding: 48px 24px;
+    text-align: center;
+    border: 1px dashed rgba(127, 127, 127, 0.25);
+    border-radius: 22px;
+    background: rgba(127, 127, 127, 0.03);
+}
+
+.dashboard-empty-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    margin: 0 auto 16px;
+    border-radius: 16px;
+    background: rgba(127, 127, 127, 0.08);
+    font-size: 1.5rem;
+    opacity: 0.6;
+}
+
+.dashboard-empty-card h3 {
+    margin: 0;
+    font-size: 1.15rem;
+}
+
+.dashboard-empty-card p {
+    max-width: 500px;
+    margin: 8px auto 0;
+    line-height: 1.5;
+    opacity: 0.6;
+}
+
+
+/* =========================================================
+   Phase 6 — Summary Card Test Layout
+   Step 2
+   ========================================================= */
+
+.summary-test-section {
+    margin-bottom: 42px;
+}
+
+.summary-card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+/* ---------- Mobile ---------- */
+
+@media (max-width: 768px) {
+
+    .dashboard-screen {
+        padding: 20px 16px 36px;
+    }
+
+    .dashboard-topbar {
+        padding-bottom: 20px;
+    }
+
+    .dashboard-hero {
+        padding: 26px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        border-radius: 22px;
+    }
+
+    .dashboard-section-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .summary-card-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .dashboard-screen {
+        padding: 16px 12px 30px;
+    }
+
+    .dashboard-page-label {
+        display: none;
+    }
+
+    .dashboard-hero {
+        padding: 22px;
+    }
+
+    .dashboard-section-card {
+        min-height: 190px;
+        padding: 20px;
+        border-radius: 18px;
+    }
+
+}
+
+
+
+.dashboard-content {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+
+.dashboard-summary-area,
+.dashboard-actions-area,
+.dashboard-workspace-area {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.dashboard-summary-grid {
+    display: grid;
+    grid-template-columns: repeat(
+        3,
+        minmax(0, 1fr)
+    );
+    gap: 18px;
+}
+
+.dashboard-actions-grid {
+    display: grid;
+    grid-template-columns: repeat(
+        2,
+        minmax(0, 1fr)
+    );
+    gap: 16px;
+}
+
+.dashboard-workspace-area {
+    margin-top: 2px;
+}
+
+@media (max-width: 1024px) {
+
+    .dashboard-summary-grid {
+        grid-template-columns: repeat(
+            2,
+            minmax(0, 1fr)
+        );
+    }
+
+    .dashboard-actions-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .dashboard-summary-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-content {
+        gap: 26px;
+    }
+}
+
+
+
+.dynamic-screen-page {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.dynamic-screen-header {
+    padding: 32px 0 24px;
+}
+
+.dynamic-screen-header h1 {
+    margin: 8px 0 10px;
+}
+
+.dynamic-screen-header p {
+    margin: 0;
+    opacity: 0.65;
+}
+
+.dynamic-screen-content {
+    padding-bottom: 40px;
+}
+
+.dashboard-section-card-clickable {
+    cursor: pointer;
+}
+
+.screen-back-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    margin-right: 10px;
+
+    flex-shrink: 0;
+
+    border: 1px solid rgba(127, 127, 127, 0.16);
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, 0.045);
+
+    color: inherit;
+    font: inherit;
+
+    cursor: pointer;
+
+    transition:
+        transform 160ms ease,
+        background 160ms ease,
+        border-color 160ms ease;
+}
+
+.screen-back-button:hover {
+    transform: translateX(-2px);
+    background: rgba(127, 127, 127, 0.08);
+    border-color: rgba(99, 102, 241, 0.25);
+}

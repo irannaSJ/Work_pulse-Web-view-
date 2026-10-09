@@ -1,0 +1,608 @@
+
+
+@media (max-width: 768px) {
+
+    .app-container {
+        padding: 16px;
+    }
+
+    .foundation-card {
+        padding: 24px;
+        border-radius: 16px;
+    }
+
+    .foundation-card h1 {
+        font-size: 24px;
+    }
+}
+
+/* =========================================================
+   Phase 5 - Step 4
+   Responsive Component Foundation
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   Global responsive safety
+   --------------------------------------------------------- */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+#app {
+    width: 100%;
+    max-width: 100%;
+}
+
+
+/* ---------------------------------------------------------
+   Application content
+   --------------------------------------------------------- */
+
+.app-container {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+}
+
+
+/* ---------------------------------------------------------
+   Generic content cards
+   --------------------------------------------------------- */
+
+.foundation-card {
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* ---------------------------------------------------------
+   Dynamic field grid
+   --------------------------------------------------------- */
+
+.field-grid {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+
+/* ---------------------------------------------------------
+   Dynamic field
+   --------------------------------------------------------- */
+
+.dynamic-field {
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-wrap: anywhere;
+}
+
+
+.dynamic-field-header {
+    min-width: 0;
+}
+
+
+.dynamic-field-label {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+
+.dynamic-field-type {
+    flex-shrink: 0;
+}
+
+
+.dynamic-field-value {
+    min-width: 0;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+
+/* =========================================================
+   Tablet
+   ========================================================= */
+
+@media (max-width: 1024px) {
+
+    .app-container {
+        width: 100%;
+    }
+
+
+    .field-grid {
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(0, 1fr)
+            );
+    }
+
+
+    .foundation-card {
+        padding: 20px;
+    }
+}
+
+
+/* =========================================================
+   Small tablet / large mobile
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .app-container {
+        display: block;
+    }
+
+
+    .foundation-card {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+
+    .field-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .dynamic-field {
+        width: 100%;
+    }
+}
+
+
+/* =========================================================
+   Mobile
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .foundation-card {
+        padding: 16px;
+        border-radius: 14px;
+    }
+
+
+    .field-grid {
+        gap: 12px;
+    }
+
+
+    .dynamic-field {
+        padding: 14px;
+        border-radius: 12px;
+    }
+
+
+    .dynamic-field-header {
+        gap: 8px;
+        align-items: flex-start;
+    }
+
+
+    .dynamic-field-label {
+        font-size: 13px;
+    }
+
+
+    .dynamic-field-type {
+        font-size: 10px;
+        padding: 3px 7px;
+    }
+
+
+    .dynamic-field-value {
+        font-size: 14px;
+    }
+
+
+    .app-state {
+        min-height: 160px;
+        padding: 24px 16px;
+    }
+}
+
+
+/* =========================================================
+   Very small phones
+   ========================================================= */
+
+@media (max-width: 360px) {
+
+    .foundation-card {
+        padding: 14px;
+    }
+
+
+    .dynamic-field {
+        padding: 12px;
+    }
+
+
+    .dynamic-field-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    .dynamic-field-type {
+        align-self: flex-start;
+    }
+}
+
+
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+
+@media (max-width: 1024px) {
+
+    .list-table {
+        min-width: 760px;
+    }
+
+    .list-table th,
+    .list-table td {
+        padding: 12px 14px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .list-table-wrapper {
+        border: none;
+        background: transparent;
+        overflow: visible;
+    }
+
+    .list-table {
+        min-width: 0;
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0 14px;
+    }
+
+    .list-table thead {
+        display: none;
+    }
+
+    .list-table tbody {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .list-table tbody tr {
+        display: flex;
+        flex-direction: column;
+
+        padding: 16px;
+
+        border: 1px solid rgba(127, 127, 127, 0.16);
+        border-radius: 18px;
+
+        background: rgba(255, 255, 255, 0.045);
+
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.045);
+    }
+
+    .list-table tbody tr:hover {
+        background: rgba(255, 255, 255, 0.06);
+    }
+
+    .list-table tbody td {
+        display: grid;
+        grid-template-columns: minmax(110px, 36%) 1fr;
+        gap: 12px;
+
+        padding: 9px 0;
+
+        border: none;
+
+        font-size: 0.88rem;
+
+        overflow-wrap: anywhere;
+    }
+
+    .list-table tbody td::before {
+        content: attr(data-label);
+
+        font-size: 0.76rem;
+        font-weight: 800;
+        line-height: 1.4;
+        opacity: 0.55;
+    }
+
+    .list-table .list-table-empty-cell {
+        display: block;
+        height: auto;
+        padding: 28px 16px;
+        text-align: center;
+    }
+
+    .list-table .list-table-empty-cell::before {
+        content: none;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .list-table tbody tr {
+        padding: 14px;
+        border-radius: 16px;
+    }
+
+    .list-table tbody td {
+        grid-template-columns: 1fr;
+        gap: 4px;
+    }
+
+    .list-table tbody td::before {
+        font-size: 0.72rem;
+    }
+}
+
+
+
+@media (max-width: 1024px) {
+
+    .list-table {
+        min-width: 760px;
+    }
+
+    .list-table th,
+    .list-table td {
+        padding: 12px 14px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .list-table-wrapper {
+        overflow: visible;
+
+        border: none;
+        background: transparent;
+    }
+
+    .list-table {
+        min-width: 0;
+        width: 100%;
+
+        border-collapse: separate;
+        border-spacing: 0 14px;
+    }
+
+    .list-table thead {
+        display: none;
+    }
+
+    .list-table tbody {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .list-table-row {
+        display: flex;
+        flex-direction: column;
+
+        padding: 16px;
+
+        border:
+            1px solid rgba(127, 127, 127, 0.16);
+
+        border-radius: 18px;
+
+        background: rgba(255, 255, 255, 0.045);
+
+        box-shadow:
+            0 8px 24px rgba(0, 0, 0, 0.045);
+    }
+
+    .list-table-row:hover {
+        background: rgba(255, 255, 255, 0.06);
+    }
+
+    .list-table-row td {
+        display: grid;
+
+        grid-template-columns:
+            minmax(110px, 36%) 1fr;
+
+        gap: 12px;
+
+        padding: 9px 0;
+
+        border: none;
+
+        overflow-wrap: anywhere;
+    }
+
+    .list-table-row td::before {
+        content: attr(data-label);
+
+        font-size: 0.76rem;
+        font-weight: 800;
+
+        line-height: 1.4;
+
+        opacity: 0.55;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .list-table-row {
+        padding: 14px;
+        border-radius: 16px;
+    }
+
+    .list-table-row td {
+        grid-template-columns: 1fr;
+        gap: 4px;
+    }
+
+    .list-table-row td::before {
+        font-size: 0.72rem;
+    }
+}
+
+
+
+.list-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    margin-top: 18px;
+}
+
+.list-pagination-button {
+    min-width: 110px;
+    min-height: 42px;
+
+    padding: 9px 14px;
+
+    border: 1px solid rgba(127, 127, 127, 0.16);
+    border-radius: 11px;
+
+    background: rgba(255, 255, 255, 0.045);
+
+    color: inherit;
+    font: inherit;
+    font-size: 0.85rem;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background 160ms ease,
+        border-color 160ms ease,
+        transform 160ms ease;
+}
+
+.list-pagination-button:hover:not(:disabled) {
+    transform: translateY(-1px);
+
+    background: rgba(127, 127, 127, 0.08);
+
+    border-color:
+        rgba(99, 102, 241, 0.25);
+}
+
+.list-pagination-button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.list-pagination-page {
+    min-width: 70px;
+
+    text-align: center;
+
+    font-size: 0.85rem;
+    font-weight: 700;
+
+    opacity: 0.7;
+}
+
+
+@media (max-width: 480px) {
+
+    .list-pagination {
+        gap: 8px;
+    }
+
+    .list-pagination-button {
+        min-width: 0;
+        flex: 1;
+        padding: 9px 10px;
+    }
+
+    .list-pagination-page {
+        min-width: 55px;
+    }
+}
+
+
+.dynamic-form-layout {
+    width: 100%;
+    max-width: 100%;
+}
+
+.dynamic-form-columns {
+    grid-template-columns: repeat(
+        2,
+        minmax(0, 1fr)
+    );
+}
+
+@media (max-width: 900px) {
+    .dynamic-form-columns {
+        grid-template-columns: repeat(
+            2,
+            minmax(0, 1fr)
+        );
+
+        gap: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .dynamic-form-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .dynamic-form-column {
+        gap: 14px;
+    }
+
+    .dynamic-form-layout {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .dynamic-form-columns {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .dynamic-form-layout {
+        gap: 16px;
+    }
+
+    .dynamic-form-section-title {
+        margin-bottom: 12px;
+        font-size: 1.05rem;
+    }
+}
+
+

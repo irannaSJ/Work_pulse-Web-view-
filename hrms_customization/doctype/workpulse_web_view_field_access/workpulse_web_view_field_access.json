@@ -1,0 +1,109 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "WVFA-.#####",
+ "creation": "2026-10-03 12:24:33.065252",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "configuration",
+  "section_id",
+  "source_doctype",
+  "fieldname",
+  "field_label",
+  "field_type",
+  "enabled",
+  "order"
+ ],
+ "fields": [
+  {
+   "fieldname": "configuration",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Configuration",
+   "options": "Workpulse web view configuration",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Section ID",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "source_doctype",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Source Doctype",
+   "options": "DocType",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "fieldname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Fieldname",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "field_label",
+   "fieldtype": "Data",
+   "label": "Field Label",
+   "read_only": 1
+  },
+  {
+   "fieldname": "field_type",
+   "fieldtype": "Data",
+   "label": "Field Type",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled"
+  },
+  {
+   "fieldname": "order",
+   "fieldtype": "Int",
+   "label": "Order"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-10-03 12:40:31.229215",
+ "modified_by": "Administrator",
+ "module": "hrms_customization",
+ "name": "Workpulse Web View Field Access",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "export": 1,
+   "read": 1,
+   "role": "Employee"
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
