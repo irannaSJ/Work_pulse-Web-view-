@@ -450,10 +450,11 @@ def get_workpulse_ui_definition(
             ptype="read",
             user=user,
         ):
-            frappe.throw(
-                f"You do not have read permission for {source_doctype}.",
-                frappe.PermissionError,
-            )
+            # frappe.throw(
+            #     f"You do not have read permission for {source_doctype}.",
+            #     frappe.PermissionError,
+            # )
+            continue
 
         # -----------------------------------------------------
         # Get metadata

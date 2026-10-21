@@ -1,0 +1,74 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-10-21 11:13:41.911259",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "type",
+  "select_doctype",
+  "label",
+  "doctype_view",
+  "action_key",
+  "enabled",
+  "order"
+ ],
+ "fields": [
+  {
+   "default": "DocType",
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Type"
+  },
+  {
+   "fieldname": "select_doctype",
+   "fieldtype": "Link",
+   "label": "Select Doctype",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "label",
+   "fieldtype": "Data",
+   "label": "Label"
+  },
+  {
+   "fieldname": "doctype_view",
+   "fieldtype": "Select",
+   "label": "Doctype View",
+   "options": "List\nNew"
+  },
+  {
+   "fieldname": "action_key",
+   "fieldtype": "Data",
+   "label": "Action_Key"
+  },
+  {
+   "default": "0",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled"
+  },
+  {
+   "fieldname": "order",
+   "fieldtype": "Int",
+   "label": "Order"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-10-21 11:18:12.070487",
+ "modified_by": "Administrator",
+ "module": "hrms_customization",
+ "name": "quickActionForWorkSpaceConfiguration",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,125 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-10-21 11:08:00.859681",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "general_configuration_section",
+  "title",
+  "public",
+  "logo",
+  "enabled",
+  "default_configuration",
+  "quick_actions",
+  "targetting_section",
+  "company",
+  "department",
+  "employee",
+  "role",
+  "configuration_scope"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "default": "0",
+   "fieldname": "public",
+   "fieldtype": "Check",
+   "label": "Public"
+  },
+  {
+   "fieldname": "logo",
+   "fieldtype": "Icon",
+   "label": "Logo"
+  },
+  {
+   "default": "0",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled"
+  },
+  {
+   "default": "0",
+   "fieldname": "default_configuration",
+   "fieldtype": "Check",
+   "label": "Default Configuration"
+  },
+  {
+   "fieldname": "quick_actions",
+   "fieldtype": "Table",
+   "label": "Quick Actions",
+   "options": "quickActionForWorkSpaceConfiguration"
+  },
+  {
+   "fieldname": "targetting_section",
+   "fieldtype": "Section Break",
+   "label": "Targetting"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "role",
+   "fieldtype": "Link",
+   "label": "Role",
+   "options": "Role"
+  },
+  {
+   "fieldname": "configuration_scope",
+   "fieldtype": "Select",
+   "label": "Configuration Scope",
+   "options": "Global\nCompany\nDepartment\nEmployee\nRole"
+  },
+  {
+   "fieldname": "general_configuration_section",
+   "fieldtype": "Section Break",
+   "label": "General Configuration"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-10-21 11:25:01.530523",
+ "modified_by": "Administrator",
+ "module": "hrms_customization",
+ "name": "ConfigurationForWorkSpace_Webview",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

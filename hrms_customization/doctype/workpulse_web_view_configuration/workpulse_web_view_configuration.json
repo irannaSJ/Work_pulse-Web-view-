@@ -7,7 +7,6 @@
  "engine": "InnoDB",
  "field_order": [
   "title",
-  "logo",
   "enabled",
   "sections"
  ],
@@ -24,11 +23,6 @@
    "label": "Enabled"
   },
   {
-   "fieldname": "logo",
-   "fieldtype": "Attach Image",
-   "label": "Logo"
-  },
-  {
    "fieldname": "sections",
    "fieldtype": "Table",
    "label": "Sections",
@@ -38,7 +32,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-10-03 15:58:30.668376",
+ "modified": "2026-10-19 15:05:59.080074",
  "modified_by": "Administrator",
  "module": "hrms_customization",
  "name": "Workpulse web view configuration",

@@ -96,15 +96,16 @@ def get_source_doctype_ui_records(
     # 4. Validate Frappe DocType permission
     # ---------------------------------------------------------
 
-    if not frappe.has_permission(
-        source_doctype,
-        ptype="read",
-        user=user,
-    ):
-        frappe.throw(
-            "You do not have read permission for this DocType.",
-            frappe.PermissionError,
-        )
+    # if not frappe.has_permission(
+    #     source_doctype,
+    #     ptype="read",
+    #     user=user,
+    # ):
+        # frappe.throw(
+        #     "You do not have read permission for this DocType.",
+        #     frappe.PermissionError,
+        # )
+        # continue
 
     # ---------------------------------------------------------
     # 5. Resolve Workpulse-enabled fields

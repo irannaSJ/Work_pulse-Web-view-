@@ -126,14 +126,15 @@ def get_source_doctype_metadata():
             source_doctype,
             "read",
         ):
-            frappe.throw(
-                _(
-                    "You do not have permission to read {0}."
-                ).format(
-                    source_doctype
-                ),
-                frappe.PermissionError,
-            )
+            # frappe.throw(
+            #     _(
+            #         "You do not have permission to read {0}."
+            #     ).format(
+            #         source_doctype
+            #     ),
+            #     frappe.PermissionError,
+            # )
+            continue
 
         # -----------------------------------------------------
         # Get DocType metadata
